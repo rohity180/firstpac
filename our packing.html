@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<head>
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Karla|Montserrat|Roboto|Noto+Sans" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/0C9E3324-AD8F-9244-988D-68820F651813/main.js" charset="UTF-8">
+  
+</script>
+<style>
+
+
+
+
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active2 {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+</style>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="uptonav">
+  <br>
+<span class="callact"><strong>Give us a call at:</strong></span> <!-- <i class="fa fa-volume-control-phone" aria-hidden="true"></i> --> <a href="tel:+919004486999"> <img src="img/call.png" class="call"></a>
+<div class="icons">
+<a href="https://www.facebook.com/FirstPackersandmovers/" target="_blank" style="text-decoration: none;"><i class="fa fa-facebook-official" style="color:#3B5998;margin-right: 10px"></i></a>
+<a href="https://www.instagram.com/first_packers_and_movers/" target="_blank" style="text-decoration: none; margin-right: 10px;"><i class="fa fa-instagram" style="color:#cd486b;"></i></a>
+<a href="mailto:firstpacknmove2009@gmail.com"  style="text-decoration: none;margin-right: 20px"><i class="fa fa-envelope-o" style="color:red;"></i></a>
+</div>
+</div>
+<div>
+<nav>
+  <img src="img/firstpack 2.png" class="logo-nav">
+  <div class="toggle" id="bars">
+      <i class="fa fa-bars menu" id="menu" onclick="myFunction()" aria-hidden="true"></i>
+    </div>
+    <div class="nav">
+  <ul >
+    <li><a href="index.html" ><strong>Home</strong></a></li> 
+    <li><a href="about_us.html"><strong>About Us</strong></a></li>
+    <li><a href="our_services.html"><strong> Our Services</strong></a></li>
+    <li><a href="our_features.html" ><strong>Our Features</strong></a></li>
+    <li><a href="#" class="current"><strong>Our Packing</strong></a></li>
+    <li><a href="contact_us.html"><strong>Contact Us</strong></a></li>
+  </ul>
+</div>
+</nav>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+  $(document).ready(function (){
+      $('.menu').click(function(){
+        $('ul').toggleClass('active');
+        
+      })
+    })
+</script>
+</div>
+<div>
+  <br>
+  <br>
+  <br>
+</div>
+<!-- <script type="text/javascript">
+  alert("website is under construction!!!!")
+</script> -->
+
+<!-- <script type="text/javascript">
+  function myFunction() 
+  {
+    var element = document.getElementById("menu");
+    element.classList.toggle("active");
+  }
+</script> -->
+
+  <!-- <img src="img/homeimg1.jpg" alt="Home Img" style="width:100%;"> -->
+  <div style="width: 100%">
+ <div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="homeimg1.jpg" width="100%">
+  <img class="mySlides" src="homeimg2.jpg" width="100%">
+  <img class="mySlides" src="homeimg3.jpg" width="100%">
+  <img class="mySlides" src="homeimg4.jpg" width="100%">
+  <img class="mySlides" src="homeimg5.jpg" width="100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script> 
+    
+</div> 
+    <!-- <div class="text-block">
+      <h4>We provide the Best in-class PACKING and<br> MOVING services</h4>
+      <p>click the button below to get a free quotation, <br>and we will pay a visit to your place<br>Free Of Cost....</p>
+    </div> -->
+    
+
+
+<div class="home-intro intro-cont">
+  <h3>Our Packing:</h3>
+  <p> We, at First Packers And Movers provide our clients with the highest quality of relocation services for a reasonable price. We always lookout for innovative ways of delivering even more efficient packing and moving and warehouse services. Trained and capable workers will take into account of all your major and minor requirements with great ease. You should let only extremely professional experienced packing and moving service providers handle the task and ensure reliable, safe and secure shifting.</p>
+  <p>The packers at First Packers And Movers are very professional and trained at handling & packing fragile goods. <b>High quality packing material is used to protect the items from damage due to jolts and shoves.</b> The valuables of the clients are also packed, sealed and stored with due care.&nbsp; &nbsp;<b><u>Our workers are honest, diligent and discreet.</u></b></p>
+
+  <p><b>While handling commercial shifting, sensitive electronic gadgets like <u>computers, printers and confidential documents</u> are relocated with great care. We are equipped with adequate manpower and machinery to handle relocation projects of any scale. We have a fleet of trucks and trailers to accommodate cargo of any size. Stand by vehicles are also available to handle emergencies. The goods are securely packed to ensure their damage-free transport. With tamperproof sealing; valuables are also protected against theft and environmental spoilage. An online track & trace system that guarantees for safe transportation.</b></p>
+</div>
+
+<div class="form-header"><a name="quotation"></a><h4>Send Your Query Online</h4></div>
+<div class="form">
+  <form action="sendmail.php" method="POST">
+  <table align="center">
+  <tr><td class="extd"> Your name:</td><td><input type="text" name="Name" size="30" placeholder="Name"></td></tr>
+  <tr><td class="extd">Move From:</td><td><input type="text" name="from" placeholder="From"></td></tr>
+  <tr><td class="extd">To:</td><td><input type="text" name="to" placeholder="To"></td></tr>
+  <tr><td class="extd">Date:</td><td><input type="date" name="date" placeholder="Date"></td></tr>
+  <tr><td class="extd">Your E-mail adress:</td><td><input type="email" name="email" placeholder="E-Mail"></td></tr>
+  <tr><td class="extd">Your Contact No:</td><td><input type="tel" name="cnumber" placeholder="Contact No."></td></tr>
+  <br>
+  <tr><td class="extd"></td><td><input type="submit" name="done"></td></tr>
+</table>
+</form>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+<div class="serv">
+  <h3 align="center">Packaging materials used by us</h3>
+  <h5 align="center">Our quality of service can be easily predicted by looking at the packaging technique and packaging materials used by us</h5>
+  <div class="cont-serv"> 
+
+    <h3>Cardboard boxes</h3>
+    <img src="img/boxes.jpg" class="desc_img" >
+    <p>These are Light-weight and durable. after packing the maerials, they are kept inside these boxes, and are securely sealed by us for an easy and secure relocations.</p>
+  </div>
+  <div class="cont-serv"> 
+    
+    <h3>Bubble Wraps</h3>
+    <img src="img/bubble wraps.jpg" class="desc_img" >
+    <p>bubble wraps are a must if the items which need to be transported are fragile or delicate, so as to ensure a secure relocation. they help keeping the fragile items safe.</p>
+  </div>
+  <div class="cont-serv"> 
+    
+    <h3>Wooden crates</h3>
+    <img src="img/packed wood boxes.jpg" class="desc_img" >
+    <p>items which may get easily deformed during the relocation, such as clothings, mattresses, or other plastck soft items are placed inside wooden crates after the packing.</p>
+  </div>
+    <div class="cont-serv">
+    <h3>Plastic stretch wraps</h3>
+    <img src="img/seal locks.jpg" class="desc_img" >
+    <p>Each and Every stuff is sealed with atleast a few layes of stretch wrap. so that it becomes easy to carry, and the wraps also protect the items from moisture, humidity.</p>
+  </div>
+  <div class="cont-serv"> 
+    
+    <h3>Poly strapping tools</h3>
+    <img src="img/packaging equipments.jpg" class="desc_img" >
+    <p>these are the tools which help in strapping the containers together. So, nothing moves on it's own during the transit, and it provides an extra seal and more security to items.</p>
+  </div>
+  <div class="cont-serv"> 
+    
+    <h3>Labels</h3>
+    <img src="img/labels.jpg" class="desc_img" >
+    <p>We exclusively use labels such as fragile, delicate, books, this side up. It makes easily categorize the items and help us to focus more on securing the delicate items. </p>
+  </div>
+  
+  
+</div>
+<br>
+<br>
+<br>
+
+
+<footer class="footer">
+  <div class="foot1">
+    <h3 style="text-align: center" >About Us</h3>
+ <p style="text-align: center;"> First Packers and Movers are one of the leading packers and movers company based in Mumbai that provide reliable and timely services in the field of packing and moving.</p></div>
+
+ <div class="foot2"> <h3 style="text-align: center;">&copy; Firstpacknmove.com
+  <br>All Rights Reserved</h3></div>
+
+  <div class="foot3"><h3 style="text-align: center;">Contact Us On:</h3>
+  <div class="iconsfoo">
+<a href="https://www.facebook.com/FirstPackersandmovers/" target="_blank" style="text-decoration: none;text-align: center;"><i class="fa fa-facebook-official" style="color:#3B5998;margin-right: 10px;"></i></a>
+<a href="https://www.instagram.com/first_packers_and_movers/" target="_blank" style="text-decoration: none; margin-right: 10px;text-align: center;"><i class="fa fa-instagram"  style="color:#fff;"></i></a>
+<a href="mailto:firstpacknmove2009@gmail.com"  style="text-decoration: none;text-align: center;"><i class="fa fa-envelope-o" style="color:red;"></i></a>
+</div>
+</div>
+</footer>
+</div>
+</body>
+</html>
