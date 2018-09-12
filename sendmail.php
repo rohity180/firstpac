@@ -21,4 +21,5 @@ $message .= "</table>";
 $message .= '</body></html>';
 mail("Firstpackers2008@gmail.com","Contact Form Results",$message,$headers);
 header("Location:thankyou.html ");
+// end of this code
 ?>
